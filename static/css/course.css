@@ -1,0 +1,275 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    height: 580px;
+    background-image:
+
+        linear-gradient(30deg, rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.631)),
+
+        url(../img/360_F_296113687_9h1gc2ochsvdvTqeBsbauk6COAz9gvPf.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 2s;
+    animation: anime alternate;
+    animation-duration: 12s;
+    animation-delay: 3s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@keyframes anime {
+    0% {
+        background:
+            linear-gradient(30deg, rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.631)),
+            url(../img/close-up-students-learning-class.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 2s;
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+    }
+
+    25% {
+        background:
+            linear-gradient(30deg, rgba(0, 0, 0, 0.812), rgba(0, 0, 0, 0.631)),
+            url(../img/istockphoto-905256646-612x612.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 2s;
+    }
+
+    50% {
+        background:
+            linear-gradient(30deg, rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.631)),
+            url(../img/iStock-1081869336.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        transition: 2s;
+    }
+
+    75% {
+        background:
+            linear-gradient(30deg, rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.631)),
+            url(../img/960x0.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 2s;
+    }
+
+    100% {
+        background:
+            linear-gradient(30deg, rgba(0, 0, 0, 0.812), rgba(0, 0, 0, 0.631)),
+            url(../img/istockphoto-484202532-612x612.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 2s;
+    }
+}
+
+.upper-div {
+    height: 100px;
+    width: 90%;
+    margin: auto;
+}
+
+.lower-div {
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+}
+
+
+@font-face {
+    font-family: myfont;
+    src: url(../fonts/Space\ Crusaders.ttf);
+}
+
+@font-face {
+    font-family: fonts;
+    src: url(../fonts/Sabandija-font-ffp.otf);
+}
+
+:root {
+    --head: myfont;
+    --back: #07a634;
+    --sect: 30px;
+    --p: fonts;
+}
+
+
+.we {
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:
+
+        linear-gradient(30deg, rgba(0, 0, 0, 0.877), rgba(33, 32, 32, 0.189)),
+
+        url(../img/closeup-programmer-man-hand-typing-website-script-computer-working-remote-from-home-african-american-hacker-worker-programming-binary-code-using-network-security-system-concept-coding.jpg);
+}
+
+.we img {
+    width: 100%;
+    height: 100%;
+}
+
+.we .upper {
+    /* background-color: aqua; */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.we .lower {
+    /* background-color: deeppink; */
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wr {
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:
+
+        linear-gradient(30deg, rgba(0, 0, 0, 0.877), rgba(33, 32, 32, 0.189)),
+
+        url(../img/side-view-people-wearing-vr-glasses.jpg);
+}
+
+.wr img {
+    width: 100%;
+    height: auto;
+}
+
+.wr .upper {
+    /* background-color: aqua; */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.wr .lower {
+    /* background-color: deeppink; */
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ret {
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:
+
+        linear-gradient(30deg, rgba(0, 0, 0, 0.877), rgba(33, 32, 32, 0.189)),
+
+        url(../img/diverse-multi-ethnic-business-teamwork-overworking-office-meeting-room-analyzing-financial-graphs.jpg);
+}
+
+.ret img {
+    width: 100%;
+    height: 100%;
+}
+
+.ret .upper {
+    /* background-color: aqua; */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.ret .lower {
+    /* background-color: deeppink; */
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ter {
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:
+
+        linear-gradient(30deg, rgba(0, 0, 0, 0.372), rgba(0, 0, 0, 0.43)),
+
+        url(../img/aptech\ 5.jpg);
+}
+
+.ter img {
+    width: 100%;
+    height: 100%;
+}
+
+.ter .upper {
+    /* background-color: aqua; */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.ter .lower {
+    /* background-color: deeppink; */
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.car {
+    font-size: calc(1.3rem + .6vw) !important
+}
+
+.car:hover {
+    color: var(--back);
+}
+
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: var(--back);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+.back-to-top i {
+    font-size: 28px;
+    color: #fff;
+    line-height: 0;
+}
+
+.back-to-top:hover {
+    background: var(--back);
+    color: #fff;
+}
+
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+}
+

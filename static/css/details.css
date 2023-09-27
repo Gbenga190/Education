@@ -1,0 +1,120 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#back {
+    background-image: linear-gradient(30deg, rgba(0, 0, 0, 0.812), rgba(0, 0, 0, 0.631)),
+        url(../img/we.webp);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lower-div {
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(../fonts/Space\ Crusaders.ttf);
+}
+
+@font-face {
+    font-family: fonts;
+    src: url(../fonts/Sabandija-font-ffp.otf);
+}
+
+:root {
+    --head: myfont;
+    --back: #07a634;
+    --sect: 30px;
+    --p: fonts;
+}
+
+.ment {
+    text-decoration: underline;
+    font-family: 5rem;
+    text-decoration-skip-ink: all;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 40px;
+}
+.car {
+    font-size: calc(1.3rem + .6vw) !important
+}
+
+.car:hover {
+    color: var(--back);
+}
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: var(--back);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+.back-to-top i {
+    font-size: 28px;
+    color: #fff;
+    line-height: 0;
+}
+
+.back-to-top:hover {
+    background: var(--back);
+    color: #fff;
+}
+
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.member {
+    position: relative;
+    overflow: hidden;
+}
+
+.social {
+    position: absolute;
+    left: 0;
+    bottom: 70px;
+    right: 0;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    text-align: center;
+}
+
+.social a {
+    transition: color 0.3s;
+    color: #222222;
+    margin: 0 3px;
+    padding-top: 7px;
+    border-radius: 4px;
+    width: 36px;
+    height: 36px;
+    background: var(--back);
+    display: inline-block;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+}
+
+.social a:hover {
+    background: var(--back);
+}
+
+.social i {
+    font-size: 18px;
+}

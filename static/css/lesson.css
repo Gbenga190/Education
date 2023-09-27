@@ -1,0 +1,104 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    height: 580px;
+    background-image:
+
+        linear-gradient(30deg, rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.631)),
+
+        url(../img/student.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 2s;
+    animation: anime alternate;
+    animation-duration: 12s;
+    animation-delay: 3s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@keyframes anime {
+    0% {
+        background:
+            linear-gradient(30deg, rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.631)),
+            url(../img/class.avif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition-delay: 4s;
+    }
+
+    25% {
+        background:
+            linear-gradient(30deg, rgba(0, 0, 0, 0.812), rgba(0, 0, 0, 0.631)),
+            url(../img/teacher.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        transition: 2s;
+    }
+
+    50% {
+        background:
+            linear-gradient(30deg, rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.631)),
+            url(../img/two\ computer\ science\ professionals\ using\ equipment.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        transition: 2s;
+    }
+
+    75% {
+        background:
+            linear-gradient(30deg, rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.631)),
+            url(../img/getty_822081298_346989.jpg );
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 2s;
+    }
+
+    100% {
+        background:
+            linear-gradient(30deg, rgba(0, 0, 0, 0.812), rgba(0, 0, 0, 0.631)),
+            url(../img/high-school-students-using-mciroscope-in-science-class.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 2s;
+    }
+}
+.upper-div {
+    height: 100px;
+    width: 90%;
+    margin: auto;
+}
+
+.lower-div {
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(../fonts/Space\ Crusaders.ttf);
+}
+
+@font-face {
+    font-family: fonts;
+    src: url(../fonts/Sabandija-font-ffp.otf);
+}
+
+:root {
+    --head: myfont;
+    --back: #07a634;
+    --sect: 30px;
+    --p: fonts;
+}

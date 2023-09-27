@@ -1,0 +1,431 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #ffffff;
+}
+#preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid var(--back);
+    border-top-color: #e2eefd;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: animate-preloader 1s linear infinite;
+
+}
+
+@keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+header {
+    height: 580px;
+    background-image:
+
+        linear-gradient(30deg, rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.631)),
+
+        url(../img/bg-home-top-onecourse-new.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 2s;
+    animation: anime alternate;
+    animation-duration: 12s;
+    animation-delay: 3s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@keyframes anime {
+    0% {
+        background:
+            linear-gradient(30deg, rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.631)),
+            url(../img/close-up-students-learning-class.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 2s;
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+    }
+
+    25% {
+        background:
+            linear-gradient(30deg, rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.631)),
+            url(../img/business-meeting-1\ \(1\).jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 2s;
+    }
+
+    50% {
+        background:
+            linear-gradient(30deg, rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.631)),
+            url(../img/photo-1556636530-6b7482d80e3d.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        transition: 2s;
+    }
+
+    75% {
+        background:
+            linear-gradient(30deg, rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.631)),
+            url(../img/Is_Cybersecurity_Hard_to_Learn.avif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 2s;
+    }
+
+    100% {
+        background:
+            linear-gradient(30deg, rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.631)),
+            url(../img/science-microscope-students-learning-class-classroom-physics-happy-with-research-lab-innovation-scientist-african-teenager-high-school-studying-microbiology-education_590464-117871.avif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 2s;
+    }
+}
+
+.upper-div {
+    height: 100px;
+    width: 90%;
+    margin: auto;
+}
+
+.lower-div {
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(../fonts/Space\ Crusaders.ttf);
+}
+
+@font-face {
+    font-family: fonts;
+    src: url(../fonts/Sabandija-font-ffp.otf);
+}
+
+:root {
+    --head: myfont;
+    --back: #07a634;
+    --sect: 30px;
+    --p: fonts;
+}
+
+.why {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--sect);
+    font-family: var(--head);
+    margin: 40px;
+}
+
+
+
+
+.wet {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #f8f9fa;
+    color: black;
+    transition: 200ms;
+}
+
+.wet:hover {
+    background-color: var(--back);
+    padding: 20px;
+    color: #fff;
+    border-radius: 10px;
+    transition: 200ms;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.way {
+    border: none;
+    padding: 10px 13px;
+    background-color: var(--back);
+    color: #fff;
+}
+
+.we {
+    height: 450px;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-image:
+
+        linear-gradient(30deg, rgba(0, 0, 0, 0.877), rgba(33, 32, 32, 0.189)),
+
+        url(../img/closeup-programmer-man-hand-typing-website-script-computer-working-remote-from-home-african-american-hacker-worker-programming-binary-code-using-network-security-system-concept-coding.jpg);
+}
+
+.we img {
+    width: 100%;
+    height: 100%;
+}
+
+.we .upper {
+    /* background-color: aqua; */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.we .lower {
+    /* background-color: deeppink; */
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wr {
+    height: 450px;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-image:
+
+        linear-gradient(30deg, rgba(0, 0, 0, 0.877), rgba(33, 32, 32, 0.189)),
+
+        url(../img/side-view-people-wearing-vr-glasses.jpg);
+}
+
+.wr img {
+    width: 100%;
+    height: auto;
+}
+
+.wr .upper {
+    /* background-color: aqua; */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.wr .lower {
+    /* background-color: deeppink; */
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ret {
+    height: 450px;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-image:
+
+        linear-gradient(30deg, rgba(0, 0, 0, 0.877), rgba(33, 32, 32, 0.189)),
+
+        url(../img/diverse-multi-ethnic-business-teamwork-overworking-office-meeting-room-analyzing-financial-graphs.jpg);
+}
+
+.ret img {
+    width: 100%;
+    height: 100%;
+}
+
+.ret .upper {
+    /* background-color: aqua; */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.ret .lower {
+    /* background-color: deeppink; */
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ter {
+    height: 450px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-image:
+
+        linear-gradient(30deg, rgba(0, 0, 0, 0.372), rgba(0, 0, 0, 0.43)),
+
+        url(../img/aptech\ 5.jpg);
+}
+
+.ter img {
+    width: 100%;
+    height: 100%;
+}
+
+.ter .upper {
+    /* background-color: aqua; */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.ter .lower {
+    /* background-color: deeppink; */
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*-----------------
+    14. FAQ
+-----------------------*/
+.faq-section {
+    background: #f8f9fa;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.faq-section .faq-card {
+    margin: 0 0 20px;
+    padding: 20px 40px 20px 20px;
+    border: 1px solid #DBDBDB;
+    border-radius: 5px;
+}
+
+@media (max-width: 991.98px) {
+    .faq-section .faq-card {
+        margin: 0 0 15px;
+    }
+}
+
+.faq-section .faq-card:last-child {
+    margin-bottom: 0;
+}
+
+.faq-section .faq-card p {
+    margin: 15px 0 0;
+}
+
+.faq-section .faq-title {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.faq-section .faq-title>a {
+    display: block;
+    position: relative;
+    color: #201F1D;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media (max-width: 991.98px) {
+    .faq-section .faq-title>a {
+        font-size: 15px;
+    }
+}
+
+.faq-section .faq-title>a:after {
+    font-family: "Fontawesome";
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: -15px;
+    font-size: 16px;
+    color: #828282;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+@media (max-width: 767.98px) {
+    .faq-section .faq-title>a:after {
+        top: 0px;
+        right: -20px;
+    }
+}
+
+.faq-section .faq-title>a:not(.collapsed):after {
+    content: "";
+    color: var(--back);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.wem {
+    width: 40%;
+    border: none;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important
+}
+
+.wem:focus {
+    outline-color: #07a634;
+    box-shadow: 0 0 0 .25rem #07a634(13, 110, 253, .25);
+}
+
+.car {
+    font-size: calc(1.3rem + .6vw) !important
+}
+
+.car:hover {
+    color: var(--back);
+}
+
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: var(--back);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+.back-to-top i {
+    font-size: 28px;
+    color: #fff;
+    line-height: 0;
+}
+
+.back-to-top:hover {
+    background: var(--back);
+    color: #fff;
+}
+
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+}

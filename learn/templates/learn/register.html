@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block main %}
+
+<link rel="stylesheet" href="{% static '/css/register.css' %}">
+
+<div class="bg-white p-3 position-sticky top-0 left-0 d-flex justify-content-center align-items-center shadow-sm text center">
+    <h1 class="text-dark" style="font-family: var(--head)"><a href="{% url 'index' %}"
+            class="text-dark text-decoration-none">EDUMIND</a></h1>
+</div>
+
+<div class="when">
+    {% if registered %}
+    <h1>Thank you for registering</h1>
+    {% else %}
+    <h3 style="font-family: var(--head)">Fill the form</h3>
+    <form enctype="multipart/form-data" method="post">
+        {% csrf_token %}
+        {{user_form|crispy}}
+        {{profile_form|crispy}}
+        <input type="submit" value="Register" class="btn btn-success w-100 btn-block">
+        <div class="text-center mt-2" style="font-family: 'Kanit', sans-serif;">Already have an Account? <a
+                href="{% url 'user_login' %}" class="text-decoration-none text-dark">Log in</a></div>
+
+    </form>
+    {% endif %}
+</div>
+
+{% endblock %}

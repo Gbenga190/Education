@@ -1,0 +1,270 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+
+<link rel="stylesheet" href="{% static '/css/language.css'%}">
+
+<section id="back">
+
+    <article class="lower-div">
+        <h1 class="text-white" style="font-family: var(--head);">Programming Language</h1>
+        <p class="text-white fs-5" style="font-family: 'Kanit', sans-serif;">
+            <span><a href="{% url 'index' %}" class="text-decoration-none text-white">Home</a></span> / <span><a
+                    href="{% url 'about' %}" class="text-decoration-none text-white">About</a></span> / <span><a
+                    href="{% url 'curriculum:standard_list' %}"
+                    class="text-decoration-none text-white">Courses</a></span> / <span><a href="{% url 'blog' %}"
+                    class="text-decoration-none text-white">Blog</a></span>
+        </p>
+    </article>
+</section>
+
+<div class="container overflow-hidden mt-5">
+    <div class="row g-3">
+        <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+            <div class="rounded p-2 bg-light shadow">
+                <iframe width="710" height="350" src="https://www.youtube.com/embed/2lVDktWK-pc?si=eiAabi_D1-anBJYT"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-12 col-sm-12">
+            <div class="rounded p-3 bg-light shadow">
+                <h3 style="font-family: var(--head);">Programming Language</h3>
+                <p style="font-family: 'Kanit', sans-serif;">Learn Programming Language in 2023</p>
+                <p style="font-family: 'Kanit', sans-serif; text-align: justify;">A Programming is a set of instructions and rules that allow
+                    human to give commands to computers. Programmers use programming language to communicate with
+                    computers. Popular programming languages include java, Python, C++ and Javascript </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="card bg-light mb-3" style="max-width: 800px;">
+        <div class="row g-0">
+          <div class="col-md-4 visibility-sm-hidden">
+            <img src="static/img/closeup-programmer-man-hand-typing-website-script-computer-working-remote-from-home-african-american-hacker-worker-programming-binary-code-using-network-security-system-concept-coding.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body bg-light">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+<!-- E-Books -->
+<div class="d-flex justify-content-center m-3 align-items-center">
+    <h3 style="font-family: var(--head); text-align: center;">Get access to our E-books</h3>
+</div>
+<div class="container px-4 text-center">
+    <div class="row g-5">
+        <div class="col-lg-4">
+            <div class="p-3 text-dark shadow-sm bg-light rounded-2"
+                style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                <h3 style="font-family: var(--head);">Introduction to html,css</h3>
+                <p style="font-family: 'Kanit', sans-serif;"></p>
+                {% if user.is_authenticated %}
+                <a href="{% static '/img/Functional CSS Dynamic HTML without JavaScript PDF.pdf' %}" download=""
+                    style="font-family: 'Kanit', sans-serif;" class="btn btn-success">Download</a>
+                {% else %}
+                <a href="{% url 'register' %}" class="btn btn-success mx-2 text-white">Sign Up</a>
+                <a href="{% url 'user_login' %}" class="btn btn-success mx-2 text-white">Sign In</a>
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="p-3 text-dark shadow-sm bg-light rounded-2"
+                style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                <h3 style="font-family: var(--head);">Introduction to JavaScript</h3>
+                <p style="font-family: 'Kanit', sans-serif;"></p>
+                {% if user.is_authenticated %}
+                <a href="{% static '/img/Javascript beginner.pdf' %}" download=""
+                    style="font-family: 'Kanit', sans-serif;" class="btn btn-success">Download</a>
+                {% else %}
+                <a href="{% url 'register' %}" class="btn btn-success mx-2 text-white">Sign Up</a>
+                <a href="{% url 'user_login' %}" class="btn btn-success mx-2 text-white">Sign In</a>
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="p-3 text-dark shadow-sm bg-light rounded-2"
+                style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                <h3 style="font-family: var(--head);">Introduction to Jquery</h3>
+                <p style="font-family: 'Kanit', sans-serif;"></p>
+                {% if user.is_authenticated %}
+                <a href="{% static '/img/javscript jquery.pdf' %}" download="" style="font-family: 'Kanit', sans-serif;"
+                    class="btn btn-success">Download</a>
+                {% else %}
+                <a href="{% url 'register' %}" class="btn btn-success mx-2 text-white">Sign Up</a>
+                <a href="{% url 'user_login' %}" class="btn btn-success mx-2 text-white">Sign In</a>
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="p-3 text-dark shadow-sm bg-light rounded-2"
+                style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                <h3 style="font-family: var(--head);">Introduction to Django</h3>
+                <p style="font-family: 'Kanit', sans-serif;"></p>
+                {% if user.is_authenticated %}
+                <a href="{% static '/img/django.pdf' %}" download="" style="font-family: 'Kanit', sans-serif;"
+                    class="btn btn-success">Download</a>
+                {% else %}
+                <a href="{% url 'register' %}" class="btn btn-success mx-2 text-white">Sign Up</a>
+                <a href="{% url 'user_login' %}" class="btn btn-success mx-2 text-white">Sign In</a>
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="p-3 text-dark shadow-sm bg-light rounded-2"
+                style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                <h3 style="font-family: var(--head); ">Introduction to Phyton</h3>
+                <p style="font-family: 'Kanit', sans-serif;"></p>
+                {% if user.is_authenticated %}
+                <a href="{% static '/img/django.pdf' %}" download="" style="font-family: 'Kanit', sans-serif;"
+                    class="btn btn-success">Download</a>
+                {% else %}
+                <a href="{% url 'register' %}" class="btn btn-success mx-2 text-white">Sign Up</a>
+                <a href="{% url 'user_login' %}" class="btn btn-success mx-2 text-white">Sign In</a>
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="p-3 text-dark shadow-sm bg-light rounded-2"
+                style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                <h3 style="font-family: var(--head);">Introduction to Django</h3>
+                <p style="font-family: 'Kanit', sans-serif;"></p>
+                {% if user.is_authenticated %}
+                <a href="{% static '/img/django.pdf' %}" download="" style="font-family: 'Kanit', sans-serif;"
+                    class="btn btn-success">Download</a>
+                {% else %}
+                <a href="{% url 'register' %}" class="btn btn-success mx-2 text-white">Sign Up</a>
+                <a href="{% url 'user_login' %}" class="btn btn-success mx-2 text-white">Sign In</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid p-3 mt-5 bg-light">
+    <div class="row g-3">
+        <div class="col-lg-3  col-md-6 col-sm-12">
+            <div class="p-3 bg-light">
+                <h4 class="text-lg-start text-md-start text-sm-center" style="font-family: var(--head);">EDUMIND
+                </h4>
+                <p class="text-lg-start text-md-start text-sm-center" style="font-family: 'Kanit', sans-serif;">+234
+                    9038 34 5092</p>
+                <p class="text-lg-start text-sm-center text-md-start" style="font-family: 'Kanit', sans-serif;">
+                    oluwadamilareisaiah09@gmail.com</p>
+            </div>
+        </div>
+        <div class="col-lg-3  col-md-6 col-sm-12">
+            <div class="p-3 bg-light">
+                <h4 class="text-lg-start text-md-start text-sm-center" style="font-family: var(--head);">Useful
+                    links</h4>
+                <ul class="navbar-nav text-md-start text-lg-start text-sm-center fw-semibold mb-2 mb-lg-0"
+                    style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                    <li class="nav-item">
+                        <a class="nav-link  " href="#"><span><i class="bi bi-chevron-right fw-bold"
+                                    style="color: var(--back);"></i></span> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#"><span><i class="bi bi-chevron-right fw-bold"
+                                    style="color: var(--back);"></i></span> About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text" href="#"><span><i class="bi bi-chevron-right fw-bold"
+                                    style="color: var(--back);"></i></span> Lessons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#"><span><i class="bi bi-chevron-right fw-bold"
+                                    style="color: var(--back);"></i></span> Terms of service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#"><span><i class="bi bi-chevron-right fw-bold"
+                                    style="color: var(--back);"></i></span> Privacy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-3  col-md-6 col-sm-12">
+            <div class="p-3 bg-light">
+                <h4 class="text-lg-start text-md-start text-sm-center" style="font-family: var(--head);">OUR COURSES
+                </h4>
+                <ul class="navbar-nav text-md-start text-lg-start text-sm-center fw-semibold mb-2 mb-lg-0"
+                    style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                    <li class="nav-item">
+                        <a class="nav-link  " href="#"><span><i class="bi bi-chevron-right fw-bold"
+                                    style="color: var(--back);"></i></span> Science</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#"><span><i class="bi bi-chevron-right fw-bold"
+                                    style="color: var(--back);"></i></span> Language</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text" href="#"><span><i class="bi bi-chevron-right fw-bold"
+                                    style="color: var(--back);"></i></span> Web Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#"><span><i class="bi bi-chevron-right fw-bold"
+                                    style="color: var(--back);"></i></span> Ethical-Hacking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#"><span><i class="bi bi-chevron-right fw-bold"
+                                    style="color: var(--back);"></i></span>Data Analysis</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-3  col-md-6 col-sm-12">
+            <div class="p-3 bg-light">
+                <h4 class="text-lg-start text-sm-center text-md-start" style="font-family: var(--head);">social
+                    networks</h4>
+                <p class="text-lg-start text-sm-center text-md-start" style="font-family: 'Kanit', sans-serif;">
+                    Feel free to contact us on our social media handles
+                </p>
+                <p class="text-lg-start text-sm-center text-md-start">
+                    <span>
+                        <a href="https://www.facebook.com" target="_blank" class="text-decoration-none text-dark"><i
+                                class="bi bi-facebook  car"></i></a>
+                    </span>
+                    &nbsp;
+                    <span>
+                        <a href="https://wa.me/message/EWBEQCHJ2FE6M1" target="_blank"
+                            class="text-decoration-none text-dark"><i class="bi bi-whatsapp  car"></i></a>
+                    </span>
+                    &nbsp;
+                    <span>
+                        <a href="https://www.twitter.com" target="_blank" class="text-decoration-none text-dark"><i
+                                class="bi bi-twitter  car"></i></a>
+                    </span>
+                    &nbsp;
+                    <span>
+                        <a href="https://www.linkedin.com" target="_blank" class="text-decoration-none text-dark"><i
+                                class="bi bi-linkedin  car"></i></a>
+                    </span>
+                    &nbsp;
+                    <span>
+                        <a href="https://www.instagram.com" target="_blank" class="text-decoration-none text-dark"><i
+                                class="bi bi-instagram  car"></i></a>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="p-4 border-top bg-light ">
+    <div class="container text-center">
+        <small class="text-center" style="font-family: 'Kanit', sans-serif;">&copy; Copyright <strong
+                style="font-family: var(--head);">EDUMIND.</strong>
+            All right Reserved</small>
+
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+                class="bi bi-arrow-up-short"></i></a>
+    </div>
+</footer>
+{% endblock%}

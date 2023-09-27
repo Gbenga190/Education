@@ -1,0 +1,120 @@
+{% load static %}
+
+<div class="container-fluid p-3 mt-5 bg-light">
+    <div class="row g-3">
+        <div class="col-lg-3  col-md-6 col-sm-12">
+            <div class="p-3 bg-light">
+                <h4 class="text-lg-start text-md-start text-sm-center" style="font-family: var(--head);">EDUMIND
+                </h4>
+                <p class="text-lg-start text-md-start text-sm-center" style="font-family: 'Kanit', sans-serif;">+234
+                    9038 34 5092</p>
+                <p class="text-lg-start text-sm-center text-md-start" style="font-family: 'Kanit', sans-serif;">
+                    oluwadamilareisaiah09@gmail.com</p>
+            </div>
+        </div>
+        <div class="col-lg-3  col-md-6 col-sm-12">
+            <div class="p-3 bg-light">
+                <h4 class="text-lg-start text-md-start text-sm-center" style="font-family: var(--head);">Useful
+                    links</h4>
+                <ul class="navbar-nav text-md-start text-lg-start text-sm-center fw-semibold mb-2 mb-lg-0"
+                    style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                    <li class="nav-item">
+                        <a class="nav-link  " href="{% url 'index' %}"><span><i class="bi bi-chevron-right fw-bold"
+                                    style="color: var(--back);"></i></span> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="{% url 'about' %}"><span><i class="bi bi-chevron-right fw-bold"
+                                    style="color: var(--back);"></i></span> About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text" href="{% url 'curriculum:standard_list' %}"><span><i class="bi bi-chevron-right fw-bold"
+                                    style="color: var(--back);"></i></span> Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="{% url 'blog' %}"><span><i class="bi bi-chevron-right fw-bold"
+                                    style="color: var(--back);"></i></span> Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#"><span><i class="bi bi-chevron-right fw-bold"
+                                    style="color: var(--back);"></i></span> Terms of service</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-3  col-md-6 col-sm-12">
+            <div class="p-3 bg-light">
+                <h4 class="text-lg-start text-md-start text-sm-center" style="font-family: var(--head);">OUR COURSES
+                </h4>
+                <ul class="navbar-nav text-md-start text-lg-start text-sm-center fw-semibold mb-2 mb-lg-0"
+                    style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                    <li class="nav-item">
+                        <a class="nav-link  " href="{% url 'curriculum:standard_list' %}"><span><i class="bi bi-chevron-right fw-bold"
+                                    style="color: var(--back);"></i></span> Mathematics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="{% url 'curriculum:standard_list' %}"><span><i class="bi bi-chevron-right fw-bold"
+                                    style="color: var(--back);"></i></span> Physics</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text" href="{% url 'artificial_intelligence' %}"><span><i class="bi bi-chevron-right fw-bold"
+                                    style="color: var(--back);"></i></span> Artificial Intelligence</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="{% url 'cyber_security' %}"><span><i class="bi bi-chevron-right fw-bold"
+                                    style="color: var(--back);"></i></span> Cyber Security</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="{% url 'programming_language' %}"><span><i class="bi bi-chevron-right fw-bold"
+                                    style="color: var(--back);"></i></span>Programming Language</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-3  col-md-6 col-sm-12">
+            <div class="p-3 bg-light">
+                <h4 class="text-lg-start text-sm-center text-md-start" style="font-family: var(--head);">social
+                    networks</h4>
+                <p class="text-lg-start text-sm-center text-md-start" style="font-family: 'Kanit', sans-serif;">
+                    Feel free to contact us on our social media handles
+                </p>
+                <p class="text-lg-start text-sm-center text-md-start">
+                    <span>
+                        <a href="https://www.facebook.com" target="_blank" class="text-decoration-none text-dark"><i
+                                class="bi bi-facebook  car"></i></a>
+                    </span>
+                    &nbsp;
+                    <span>
+                        <a href="https://wa.me/message/EWBEQCHJ2FE6M1" target="_blank"
+                            class="text-decoration-none text-dark"><i class="bi bi-whatsapp  car"></i></a>
+                    </span>
+                    &nbsp;
+                    <span>
+                        <a href="https://www.twitter.com" target="_blank" class="text-decoration-none text-dark"><i
+                                class="bi bi-twitter  car"></i></a>
+                    </span>
+                    &nbsp;
+                    <span>
+                        <a href="https://www.linkedin.com" target="_blank" class="text-decoration-none text-dark"><i
+                                class="bi bi-linkedin  car"></i></a>
+                    </span>
+                    &nbsp;
+                    <span>
+                        <a href="https://www.instagram.com" target="_blank" class="text-decoration-none text-dark"><i
+                                class="bi bi-instagram  car"></i></a>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="p-4 border-top bg-light ">
+    <div class="container text-center">
+        <small class="text-center" style="font-family: 'Kanit', sans-serif;">&copy; Copyright <strong
+                style="font-family: var(--head);">EDUMIND.</strong>
+            All right Reserved</small>
+    </div>
+</footer>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+
+<link rel="stylesheet" href="{% static '/css/login.css' %}">
+
+
+<div class="bg-white bg-opacity-25 p-3 d-flex justify-content-center align-items-center shadow-sm text center">
+    <h1 class="text-dark" style="font-family: var(--head)"><a href="{% url 'index' %}"
+            class="text-dark text-decoration-none">EDUMIND</a></h1>
+</div>
+
+<div class="when rounded-3">
+    <form method="POST">
+        {% csrf_token %}
+
+        <label for="username" style="font-family: var(--head);">Username</label>
+        <input type="text" name="username" placeholder="Username" class="form-control mt-2">
+        <br>
+        <label for="password" style="font-family: var(--head)">Password</label>
+        <input type="password" name="password" class="form-control mt-2">
+
+        <input type="submit" value="Login" class="btn btn-success w-100 mt-3">
+
+    </form>
+</div>
+{% endblock %}

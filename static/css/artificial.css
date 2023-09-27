@@ -1,0 +1,83 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+#front {
+    background-image: linear-gradient(30deg, rgba(0, 0, 0, 0.812), rgba(0, 0, 0, 0.631)),
+        url(../img/two\ computer\ science\ professionals\ using\ equipment.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#frontier {
+    background-image: linear-gradient(30deg, rgba(0, 0, 0, 0.812), rgba(0, 0, 0, 0.631)),
+        url(../img/busineess.jpeg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.lower-div {
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(../fonts/Space\ Crusaders.ttf);
+}
+
+@font-face {
+    font-family: fonts;
+    src: url(../fonts/Sabandija-font-ffp.otf);
+}
+
+:root {
+    --head: myfont;
+    --back: #07a634;
+    --sect: 30px;
+    --p: fonts;
+}
+.car {
+    font-size: calc(1.3rem + .6vw) !important
+}
+
+.car:hover {
+    color: var(--back);
+}
+
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: var(--back);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+.back-to-top i {
+    font-size: 28px;
+    color: #fff;
+    line-height: 0;
+}
+
+.back-to-top:hover {
+    background: var(--back);
+    color: #fff;
+}
+
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+}

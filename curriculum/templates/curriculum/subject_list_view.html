@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+
+<link rel="stylesheet" href="{% static '/css/details.css' %}">
+
+<section id="back">
+
+    <article class="lower-div">
+        <h1 class="text-white" style="font-family: var(--head);">Subjects</h1>
+        <p class="text-white fs-5" style="font-family: 'Kanit', sans-serif;">
+            <span><a href="{% url 'index' %}" class="text-decoration-none text-white">Home</a></span> / <span><a href="{% url 'curriculum:standard_list' %}" class="text-decoration-none text-white">Courses</a></span> / <span>{{standards}}</span>
+        </p>
+    </article>
+</section>
+
+<div class="d-flex my-5 align-items-center  flex-column justify-content-center">
+    <h1 style="font-family: var(--head); font-size: var(--sect);">Master The Subjects</h1>
+    <p style="font-family: 'Kanit', sans-serif;">{{standards.description}}</p>
+</div>
+
+<div class="container px-4 text-start">
+    <div class="row gx-4 gy-3">
+        {% for subject in standards.subjects.all  %}
+        <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="rounded-2 p-1 ">
+                            <div class="card" style="width: 250px;">
+                                    <img src="{{subject.image.url}}" class="card-img-top" height="170px" alt="Men">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="font-family: var(--head);">{{subject.name}}
+                                        </h5>
+                                        <p class="card-text" style="font-family: 'Kanit', sans-serif;">
+                                            {{subject.description|truncatechars:75}}</p>
+
+                                        <a href="{% url 'curriculum:lesson_list' slug=subject.slug standard=standards.slug %}" style="font-family: 'Kanit', sans-serif;" class="btn btn-success">Start Learning</a>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+        {% endfor %}
+    </div>
+</div>
+{% include 'footer.html' %}
+
+{% endblock %}

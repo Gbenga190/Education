@@ -1,0 +1,34 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-image:linear-gradient(30deg, rgba(2, 1, 1, 0.344),rgba(216, 211, 211, 0.5)),
+     url(../img/teacher.jpg);
+    height: 100vh;
+}
+@font-face {
+    font-family: myfont;
+    src: url(../fonts/Space\ Crusaders.ttf);
+}
+
+@font-face {
+    font-family: fonts;
+    src: url(../fonts/Sabandija-font-ffp.otf);
+}
+
+:root {
+    --head: myfont;
+    --back: #07a634;
+    --sect: 30px;
+    --p: fonts;
+}
+.when{
+    width:50%;
+    background:rgba(255, 255, 255, 0);
+    padding:30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8) !important;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(5.2px);
+    margin:40px auto;
+}
